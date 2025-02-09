@@ -1,0 +1,19 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SILVERDACTYL_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Silverdactyl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SILVERDACTYL_LEFT || SHIELD_SILVERDACTYL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

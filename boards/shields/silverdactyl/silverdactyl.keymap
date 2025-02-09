@@ -1,0 +1,39 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+ #include <behaviors.dtsi>
+ #include <dt-bindings/zmk/keys.h>
+ #include <dt-bindings/zmk/bt.h>
+ #include <dt-bindings/zmk/rgb.h>
+ #include <dt-bindings/zmk/ext_power.h>
+ #include <dt-bindings/zmk/outputs.h>
+
+ #define DEFAULT 0
+
+/* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
+However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
+As such, those are in use within the default layer at this time.*/
+
+/ {
+       keymap {
+              compatible = "zmk,keymap";
+
+              default_layer {
+
+                     bindings = <
+
+       &kp X      &kp F   &kp D     &kp P    &kp Q                       &kp J     &kp '     &kp O     &kp U      &kp PERIOD 
+       &kp N      &kp S   &kp T     &kp C    &kp Y                       &kp M     &kp H     &kp A     &kp E      &kp I 
+       &kp B      &kp V   &kp X     &kp C    &kp V                       &kp Z     &kp L     &kp UNDER &kp SLASH  &kp COMMA
+
+                          &kp LALT  &kp R    &kp @none                   &kp @none           &mo SPACE 
+                          &kp LCTRL &kp LGUI &kp @none                   &kp @none           &mo LSHFT 
+
+
+                     >;
+              };
+       };
+};
