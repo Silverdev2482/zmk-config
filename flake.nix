@@ -22,7 +22,7 @@
         board = "nice_nano_v2";
         shield = "silverdactyl_%PART%";
 
-        zephyrDepsHash = "sha256-yRzN+df/kzHEOWTiQLRLsPNRBDM4fV5qmLa6SevYKxc=";
+        zephyrDepsHash = "sha256-ZJXEqlVdCSntyUFu5FoALYYxXjkMsGidaAE24IQ5r54=";
 
         meta = {
           description = "ZMK firmware";
